@@ -1,0 +1,47 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.borde{
+    border: 5px solid orangered;
+    margin: 0 auto;
+    width: 375px;
+}
+.container{
+     display: grid;
+    /*grid-template-columns: 25px 25px 25px 25px 25px 25px;*/
+    grid-template-columns: repeat(12, 25px);
+     width: 170px;
+    gap: 5px;
+}
+p{
+    font-size: smaller;
+}
+.num{
+    background-color: #717575;
+    font-size: 1rem;
+    margin: auto auto;
+    width: 25px;
+    height: 25px;
+    text-align: center;
+    color: white;
+}
+
+.num:hover{
+    background-color: #554d4d;
+    cursor: pointer;
+}
+.instrucciones{
+    border: 1px solid blue;
+    width: 300px;
+    margin: 0 auto;
+}
+#result{
+    color: crimson;
+    font-size: 25px;
+}
+.labelin{
+    width: 200px;
+    margin-left: 150px;
+}
