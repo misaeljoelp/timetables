@@ -67,7 +67,13 @@ function printTable(numero) {
     let phrase = '';
 for (let index = 0; index < arrayNumeros.length; index++) {
     const element = arrayNumeros[index];
-    phrase = phrase + `  ${element} / ${numero} = ${element / numero}  <br>`;
+    if (element > 10){
+        phrase = phrase + `  ${element} / ${numero} = ${element / numero}  <br>`;
+    } else{
+        phrase = phrase + `  ${element} / ${numero} = ${element / numero}  <br>`;
+    }
+
+    
     resultado.innerHTML = phrase;
     }
 }

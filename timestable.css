@@ -11,21 +11,24 @@
 .container{
      display: grid;
     /*grid-template-columns: 25px 25px 25px 25px 25px 25px;*/
-    grid-template-columns: repeat(12, 25px);
-     width: 170px;
-    gap: 5px;
+    grid-template-columns: repeat(6, 40px);
+     width: 270px;
+    gap: 3px;
+    margin: 0 auto;
 }
 p{
     font-size: smaller;
 }
 .num{
     background-color: #717575;
-    font-size: 1rem;
+    font-size: 1.2rem;
     margin: auto auto;
-    width: 25px;
-    height: 25px;
+    width: 35px;
+    height: 35px;
     text-align: center;
     color: white;
+    padding-top: 6px;
+    font-weight: 700;
 }
 
 .num:hover{
