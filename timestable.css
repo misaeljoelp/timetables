@@ -7,10 +7,10 @@
     border: 5px solid orangered;
     margin: 0 auto;
     width: 375px;
+    background-color: orange;
 }
 .container{
      display: grid;
-    /*grid-template-columns: 25px 25px 25px 25px 25px 25px;*/
     grid-template-columns: repeat(6, 40px);
      width: 270px;
     gap: 3px;
