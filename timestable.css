@@ -2,33 +2,40 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
 .borde{
-    border: 5px solid orangered;
+    border: 5px solid rgba(61, 52, 138, 0.658);
     margin: 0 auto;
     width: 375px;
-    background-color: orange;
+    background-color: rgb(184, 224, 224);
 }
 .container{
      display: grid;
     grid-template-columns: repeat(6, 40px);
      width: 270px;
     gap: 3px;
-    margin: 0 auto;
+    margin: 10px auto;
 }
 p{
     font-size: smaller;
 }
+h3{
+    margin-left: 50px;
+}
 .num{
-    background-color: #717575;
+    background-color: #5063cc;
     font-size: 1.2rem;
     margin: auto auto;
     width: 35px;
     height: 35px;
     text-align: center;
-    color: white;
+    color: rgb(255, 255, 255);
     padding-top: 6px;
     font-weight: 700;
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
 }
 
 .num:hover{
@@ -41,10 +48,14 @@ p{
     margin: 0 auto;
 }
 #result{
-    color: crimson;
+    color: #5063cc;
     font-size: 25px;
 }
 .labelin{
     width: 200px;
-    margin-left: 150px;
+    margin-left: 100px;
+    margin-top: 20px;
+}
+fieldset {
+    border: 1px solid blue;
 }

@@ -2,6 +2,7 @@
 let resultado = document.querySelector('#result');
 //let boton = document.querySelector('button');
 let check = document.querySelector('#orden');
+let optDividir = document.querySelector('#optionDiv');
 
 let btnUno = document.querySelector('.uno');
 let btnDos = document.querySelector('.dos');
@@ -33,9 +34,7 @@ btnNueve.addEventListener('click', escribeNueve);
 btnDiez.addEventListener('click', escribeDiez);
 btnOnce.addEventListener('click', escribeOnce);
 btnDoce.addEventListener('click', escribeDoce);
-function escribeUno(){
-    printTable(1);
-};
+
 function escribeUno(){printTable(1);};
 function escribeDos(){printTable(2);};
 function escribeTres(){printTable(3);};
@@ -51,6 +50,25 @@ function escribeDoce(){printTable(12);};
 
 
 function printTable(numero) {
+    optDividir.checked ? tablaDividirNumero(numero) : tablaMultiplicarNumero(numero);
+}
+
+function tablaMultiplicarNumero(numero) {
+    let arrayNumeros = [1,2,3,4,5,6,7,8,9,10,11,12];
+
+    // esta linea permite ordenar aleatoriamente el array.
+    if (!check.checked)
+    {arrayNumeros.sort(() => Math.random() - 0.5);};
+    
+    let phrase = '';
+    for (let index = 0; index < arrayNumeros.length; index++) {
+        const element = arrayNumeros[index];
+        phrase = phrase + `  ${element} x ${numero} = ${element * numero}  <br>`;
+        resultado.innerHTML = phrase;
+    }
+}
+
+function tablaDividirNumero(numero) {
     let arrayNumeros = [];
     while (arrayNumeros.length < 12) {
         for (let index = 1; index < 145; index++) {
@@ -65,15 +83,9 @@ function printTable(numero) {
     {arrayNumeros.sort(() => Math.random() - 0.5);};
     
     let phrase = '';
-for (let index = 0; index < arrayNumeros.length; index++) {
-    const element = arrayNumeros[index];
-    if (element > 10){
+    for (let index = 0; index < arrayNumeros.length; index++) {
+        const element = arrayNumeros[index];
         phrase = phrase + `  ${element} / ${numero} = ${element / numero}  <br>`;
-    } else{
-        phrase = phrase + `  ${element} / ${numero} = ${element / numero}  <br>`;
-    }
-
-    
-    resultado.innerHTML = phrase;
+        resultado.innerHTML = phrase;
     }
 }

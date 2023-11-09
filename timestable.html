@@ -8,16 +8,23 @@
 </head>
 <body>
     <div class="borde">
-        <h3>TABLA DE DIVIDIR</h3>
+        <h3>TABLAS ARITMETICAS</h3>
         <div class="instrucciones">
             <h4>Instrucciones</h4>
-            <p>1.- Puede seleccionar que tabla pulsando un botón</p>
+            <p>1.- Puede seleccionar la tabla desea pulsando un botón</p>
             <p>2.- Si desea desordenar la tabla desmarque la casilla ordenar</p>
             <p>3.- Puede chocolatear la tabla clickando el botón del número deseado las veces que lo desee</p>
         </div> <br>
 
-        <!-- Escribir número: <input id="fn" type="text" value="12" > <br> -->
-         ORDENAR<input id="orden" type="checkbox" checked><br> <br>
+         <input id="orden" type="checkbox" checked>ORDENAR<br> <br>
+         <fieldset>
+            <legend></legend>
+            <input id="optionDiv" type="radio" name="operacion" value="dividir" checked>
+            <label for="optionDiv">Tabla de dividir</label><br>
+            <input id="optionMul" type="radio" name="operacion" value="multiplicar"> 
+            <label for="optionMul">Tabla de multiplicar</label><br>
+          </fieldset>
+
          <!-- <button>Mostrar</button> <br> <br> -->
         <!-- 2nd Number: <input id="sn" type="text" value="15"> <br> <br> -->
         <div class="container">
@@ -44,3 +51,4 @@
     <script src="./timestable.js"></script>
 </body>
 </html>
+
